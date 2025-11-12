@@ -27,9 +27,7 @@
       },
       {
         "id": 2,
-        "pools": [ ip r
-default via 192.168.10.254 dev eth0 
-192.168.10.0/24 dev eth0 proto kernel scope link src 192.168.10.101 
+        "pools": [ 
           { "pool":  "192.168.11.30 - 192.168.11.132" } 
         ],
         "subnet": "192.168.11.0/24",
