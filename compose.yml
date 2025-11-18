@@ -17,6 +17,18 @@ services:
         interface_name: eth3
     cap_add:
       - NET_ADMIN
+  arya:
+    build: dnsserver
+    hostname: arya
+    networks:
+      rede_stark:
+        ipv4_address: 192.168.10.11
+    cap_add:
+      - NET_ADMIN    
+    volumes:
+      - ./arya/named.conf.local:/etc/bind/named.conf.local
+      - ./arya/named.conf.options:/etc/bind/named.conf.options
+      - ./arya/zonas:/var/cache/bind/zonas
   ned:
     build: ./kea
     hostname: ned
