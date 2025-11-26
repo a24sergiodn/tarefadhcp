@@ -108,6 +108,17 @@
             }          
         ]          
       }
-    ]
+    ],
+    "loggers": [
+        {
+            "name": "kea-dhcp4",
+            "output-options": [
+                {
+                    "output": "/var/log/aa.log"
+                }
+            ],
+            "severity": "INFO"
+        }
+    ]    
   }
 }

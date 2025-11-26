@@ -73,6 +73,18 @@
                     ]
                 }                                                 
             ]
+        },
+        "loggers": [
+        {
+            "name": "kea-dhcp-ddns",
+            "severity": "INFO",
+            "output_options": [
+            {
+                "output": "/var/log/kk.log"
+            }
+            ]
         }
+        ]
+            
     }
 }
